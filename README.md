@@ -17,20 +17,24 @@ The project includes:
 ## 🗂️ Project Structure
 
 ```
-NCI-Research-Project/
+project_root/
+│── data/
+│   ├── raw/                # Original datasets (Credit Card Fraud)
 │
-├── code/
-│   ├── autoencoder_anomaly_detection.ipynb        # Autoencoder on Scikit-learn
-│   ├── mlp_classifier_imbalanced_dataset.ipynb    # MLP on imbalanced Scikit-learn
-│   ├── real_dql_model.py                          # Custom DQL implementation
-│   ├── comparison_with_real_dql.png               # Final model comparison visualization
-│   ├── creditcard_autoencoder_eval.ipynb          # Deep Autoencoder on credit card data
-│   └── README.md                                   # Project documentation
+│── notebooks/              # Jupyter notebooks for experiments
+│   ├── 01_isolation_forest_anomaly_detection.ipynb
+│   ├── 02_compare_models_Is_local.ipynb
+│   ├── 03_mlp_classifier.ipynb
+│   ├── 04_autoencoder_pipeline.ipynb
+│   ├── 05_autoencoder_pipeline_credit_card_fraud_detection.ipynb
+│   ├── 06_model_comparison_full.ipynb
+│   ├── 07_deep_autoencoder_visualization.ipynb
+│   └── comparison_with_real_dql.ipynb
 │
-├── Notebook/
-│   └── data/
-│       └── raw/
-│           └── creditcard.csv (NOT INCLUDED in repo)
+│── models/                 # Saved trained models
+│── scripts/                # Python scripts (real_dql_model.py, utils.py)
+│── requirements.txt        # Python dependencies
+│── README.md               # Project overview
 ```
 
 ---
